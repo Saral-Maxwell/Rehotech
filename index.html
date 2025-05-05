@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rehoboth IT Training: Learn Python, AI, Data Analytics and more. Empower your tech career with us!">
+  <title>Rehoboth IT Training</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-6kzXkjL3zUV+1El+3yokY90VuQhdGBixMbiOblLDbRA9QYASb9RXyTZsnLhQY++TWQ9aY+e10z7k+eI+scyn9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- intl-tel-input CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css" />
+
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+  
+  <style>
+    /* Fix phone input width and spacing to match other fields */
+    .contact-form .iti {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .contact-form .iti input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+
+
+<body>
+
+    <!-- Wrapper for Header + Hero + About with common background -->
+<div class="background-wrapper">
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Rehoboth</div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to Rehoboth Technologies</h1>
+    <p>From Basics To Brilliance</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    
+    <p>
+      Rehoboth is dedicated to providing top-tier IT training for students and professionals. Our mission is to empower learners with in-demand tech skills and industry-relevant knowledge tailored for today's fast-paced tech world.
+    </p>
+  
+  </section>
+
+</div>
+
+
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2 style="text-align: center; color: #102C57;">Our Courses</h2>
+    <div class="course-list">
+      <div class="course" style="background-image: url(PY.png); background-repeat: no-repeat; background-size: cover;">
+        <h3>Python with AI</h3>
+        <p>Python, SQL, and Artificial Intelligence</p>
+        <a href="#contact" class="enroll-button">Enroll Now</a>
+      </div>
+      <div class="course" style="background-image: url(DA.jpg);">
+        <h3>Data Analytics</h3>
+        <p>Python, SQL, Power BI, MS Excel</p>
+        <a href="#contact" class="enroll-button">Enroll Now</a>
+      </div>
+      <div class="course" style="background-image: url(OFF.jpeg);">
+        <h3>We Offer You</h3>
+        <p>1 hour aptitude class with each course you select</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact Section -->
+<section id="contact" style="padding: 50px 20px; background: #f9f9f9;">
+  <h2 style="text-align: center; margin-bottom: 30px;">Contact Us</h2>
+  <div class="contact-form" style="max-width: 600px; margin: 0 auto;">
+    <form action="https://formspree.io/f/mgvkoyvk" method="POST">
+      <label>
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; font-size: 16px; width: 100%; margin-bottom: 15px;" />
+      </label>
+      
+      <label>
+        <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; font-size: 16px; width: 100%; margin-bottom: 15px;" />
+      </label>
+      
+      <label>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required style="padding: 10px; font-size: 16px; width: 100%; margin-bottom: 15px; box-sizing: border-box;" />
+      </label>
+      
+      <label>
+        <select name="course" required style="padding: 10px; font-size: 16px; width: 100%; margin-bottom: 15px;">
+          <option value="">Select a Course</option>
+          <option value="Python with AI">Python with AI</option>
+          <option value="Data Analytics">Data Analytics</option>
+        </select>
+      </label>
+      
+      <label>
+        <input type="text" name="preferred_time" placeholder="Preferred Time to Call (e.g., 3 PM - 5 PM)" required style="padding: 10px; font-size: 16px; width: 100%; margin-bottom: 15px;" />
+      </label>
+      
+      <label>
+        <textarea name="message" placeholder="Your Message" required style="padding: 10px; font-size: 16px; min-height: 100px; width: 100%; margin-bottom: 15px;"></textarea>
+      </label>
+      
+      <button type="submit" style="padding: 12px; background-color: #102C57; color: white; border: none; font-size: 16px; cursor: pointer; width: 100%;">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+  
+
+  <!-- Location Section -->
+    <section id="location">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.040481925356!2d80.09300647454562!3d12.90511851633345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f5f783c4aabb%3A0xdb25d791c4ca92bd!2sPerungalathur%20Police%20Station!5e0!3m2!1sen!2sin!4v1745770927470!5m2!1sen!2sin" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rehoboth Technologies. All rights reserved.</p>
+    <p style="margin-top: 10px;">Follow us on:</p>
+    <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 10px;">
+      <a href="https://www.instagram.com/krishnakumar_psk" target="_blank">
+        <img src="icons8-instagram-logo-94.png" alt="Follow us on Instagram" width="24" height="24" style="margin-right: 8px;"> Instagram
+      </a>
+      <a href="https://www.linkedin.com/in/krishnakumar_psk" target="_blank">
+        <img src="icons8-linkedin-logo-48.png" alt="Follow us on LinkedIn" width="24" height="24" style="margin-right: 8px;"> LinkedIn
+      </a>
+    </div>
+  </footer>
+
+  <!-- Quick Contact Popup -->
+  <div class="quick-contact" id="quickContact">
+    <button id="toggleQuickContact">📞</button>
+    <div class="quick-contact-popup" id="quickContactPopup">
+      <a href="tel:+918940655130" target="_blank">
+        <i class="fas fa-phone"></i> Call Us
+      </a>
+      <a href="https://wa.me/+918940655130" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+<!-- Back to Top Button -->
+  <button id="goTopBtn" title="Go to top">↑</button>
+
+
+  <!-- Intl Tel Input JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+
+  <!-- JavaScript -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById("menu-toggle");
+      const nav = document.querySelector("nav");
+
+      if (menuToggle && nav) {
+        menuToggle.addEventListener("click", function () {
+          nav.classList.toggle("active");
+        });
+
+        // Close menu when clicking a link
+        const navLinks = nav.querySelectorAll("a");
+        navLinks.forEach(link => {
+          link.addEventListener("click", function() {
+            nav.classList.remove("active");
+          });
+        });
+      }
+
+      // Quick Contact Toggle
+      const toggleQuickContact = document.getElementById("toggleQuickContact");
+      const quickContactPopup = document.getElementById("quickContactPopup");
+
+      if (toggleQuickContact && quickContactPopup) {
+        toggleQuickContact.addEventListener("click", function(event) {
+          event.stopPropagation();
+          quickContactPopup.style.display = quickContactPopup.style.display === "flex" ? "none" : "flex";
+        });
+
+        document.addEventListener('click', function(event) {
+          const quickContact = document.getElementById('quickContact');
+          if (!quickContact.contains(event.target)) {
+            quickContactPopup.style.display = "none";
+          }
+        });
+      }
+
+      // Scroll to Top Button
+      const goTopBtn = document.getElementById("goTopBtn");
+      if (goTopBtn) {
+        window.onscroll = function() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            goTopBtn.style.display = "block";
+          } else {
+            goTopBtn.style.display = "none";
+          }
+        };
+
+        goTopBtn.onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+      }
+    });
+  </script>
+  <script>
+    const goTopBtn = document.getElementById("goTopBtn");
+  
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        goTopBtn.style.display = "block";
+      } else {
+        goTopBtn.style.display = "none";
+      }
+    };
+  
+    goTopBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const aboutSection = document.getElementById('about');
+  const textElements = aboutSection.querySelectorAll('h2, p');
+
+  const observerOptions = {
+    root: null,
+    threshold: 0.5
+  };
+
+  const observerCallback = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        textElements.forEach(el => el.style.color = '#ffffff'); // Light text for dark background
+      } else {
+        textElements.forEach(el => el.style.color = '#2c3e50'); // Default dark text
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  observer.observe(aboutSection);
+});
+
+
+  </script>
+  
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+  
+  
+    
+  
+  
+</body>
+</html>
+
+<script>
+  // Initialize intl-tel-input with flags
+  document.addEventListener('DOMContentLoaded', function() {
+    const phoneInput = document.querySelector("input[type='tel']");
+    if (phoneInput) {
+      window.intlTelInput(phoneInput, {
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+        preferredCountries: ["in", "us", "gb"],
+        separateDialCode: true,
+        initialCountry: "in",
+        autoPlaceholder: "aggressive",
+        dropdownContainer: document.body,
+        customContainer: "mobile"
+      });
+    }
+  });
+</script>
