@@ -191,6 +191,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
 
   <!-- JavaScript -->
+  <!--Add this in the <head> or before the closing </body> tag -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     const elements = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {
@@ -302,9 +304,25 @@ window.addEventListener('scroll', () => {
     });
   </script>
   
-  
-    
-  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sr = ScrollReveal({
+      origin: 'bottom', // Animation starts from the bottom
+      distance: '50px', // Distance the element moves
+      duration: 1000,   // Animation duration in milliseconds
+      delay: 200,       // Delay before the animation starts
+      reset: true       // Animation resets when the element leaves the viewport
+    });
+
+    // Apply animations to specific sections
+    sr.reveal('.hero h1, .hero p', { delay: 200 });
+    sr.reveal('#about h2, #about p', { delay: 300 });
+    sr.reveal('.course', { interval: 200 });
+    sr.reveal('#contact h2, .contact-form', { delay: 300 });
+    sr.reveal('#location h2, .map-container', { delay: 300 });
+    sr.reveal('footer', { delay: 200 });
+  });
+  </script>
   
 </body>
 </html>
