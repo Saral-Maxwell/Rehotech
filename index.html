@@ -43,10 +43,10 @@
 
     <!-- Wrapper for Header + Hero + About with common background -->
 <div class="background-wrapper">
-  
-  <!-- Content inside the background wrapper -->
+
+  <!-- Header Section -->
   <header>
-    <div class="logo">RSA</div>
+    <div class="logo">Rehoboth</div>
     <button class="menu-toggle" id="menu-toggle">&#9776;</button>
     <nav>
       <ul>
@@ -57,26 +57,26 @@
       </ul>
     </nav>
   </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-  <!-- Video Section -->
-  <div class="video-container">
-    <video autoplay muted loop playsinline id="background-video">
-      <source src="bg.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to Rehoboth Technologies</h1>
+    <p>From Basics To Brilliance</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    
+    <p>
+      Rehoboth is dedicated to providing top-tier IT training for students and professionals. Our mission is to empower learners with in-demand tech skills and industry-relevant knowledge tailored for today's fast-paced tech world.
+    </p>
+  
+  </section>
+
 </div>
 
-<!-- About Section -->
-<section id="about">
-  <h2>About Us</h2>
-  <p>
-    Rehoboth Software Academy is dedicated to providing top-tier IT training for students and professionals. Our mission is to empower learners with in-demand tech skills and industry-relevant knowledge tailored for today's fast-paced tech world.
-  </p>
-</section>
-
-  <!-- Courses Section -->
-  <section id="courses">
 
 
   <!-- Courses Section -->
@@ -174,10 +174,10 @@
   <div class="quick-contact" id="quickContact">
     <button id="toggleQuickContact">📞</button>
     <div class="quick-contact-popup" id="quickContactPopup">
-      <a href="tel:+918925700625" target="_blank">
+      <a href="tel:+918940655130" target="_blank">
         <i class="fas fa-phone"></i> Call Us
       </a>
-      <a href="https://wa.me/+918925700625" target="_blank">
+      <a href="https://wa.me/+918940655130" target="_blank">
         <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
     </div>
@@ -191,8 +191,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
 
   <!-- JavaScript -->
-  <!--Add this in the <head> or before the closing </body> tag -->
-    <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     const elements = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {
@@ -304,25 +302,9 @@ window.addEventListener('scroll', () => {
     });
   </script>
   
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const sr = ScrollReveal({
-      origin: 'bottom', // Animation starts from the bottom
-      distance: '50px', // Distance the element moves
-      duration: 1000,   // Animation duration in milliseconds
-      delay: 200,       // Delay before the animation starts
-      reset: true       // Animation resets when the element leaves the viewport
-    });
-
-    // Apply animations to specific sections
-    sr.reveal('.hero h1, .hero p', { delay: 200 });
-    sr.reveal('#about h2, #about p', { delay: 300 });
-    sr.reveal('.course', { interval: 200 });
-    sr.reveal('#contact h2, .contact-form', { delay: 300 });
-    sr.reveal('#location h2, .map-container', { delay: 300 });
-    sr.reveal('footer', { delay: 200 });
-  });
-  </script>
+  
+    
+  
   
 </body>
 </html>
